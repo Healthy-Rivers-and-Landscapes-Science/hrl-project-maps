@@ -1,21 +1,21 @@
-# History files
+# history files
 .Rhistory
 .Rapp.history
 
-# Session Data files
+# session Data files
 .RData
 .RDataTmp
 
-# User-specific files
+# user-specific files
 .Ruserdata
 
-# Example code in package build process
+# example code in package build process
 *-Ex.R
 
-# Output files from R CMD build
+# output files from R CMD build
 /*.tar.gz
 
-# Output files from R CMD check
+# output files from R CMD check
 /*.Rcheck/
 
 # RStudio files
@@ -32,11 +32,11 @@ vignettes/*.pdf
 *_cache/
 /cache/
 
-# Temporary files created by R markdown
+# temporary files created by R markdown
 *.utf8.md
 *.knit.md
 
-# R Environment Variables
+# R environment variables
 .Renviron
 
 # pkgdown site
@@ -47,3 +47,6 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# large raw files (should be imported locally through code provided in the repo)
+data-raw/nhdplushr/
