@@ -104,7 +104,7 @@ if (sf::st_is_longlat(bbox_delta_cropped)) {
     sf::st_transform(crs = 3310)
 }
 
-# expand the bbox by 50 miles
+# expand the bbox by 10 miles
 bbox_delta_cropped <- bbox_delta_cropped |>
   sf::st_buffer(units::set_units(10, mi) |> units::set_units(m))
 
@@ -128,9 +128,9 @@ if (sf::st_is_longlat(bbox_all)) {
     sf::st_transform(crs = 3310)
 }
 
-# expand the bbox by 50 miles
+# expand the bbox by 20 miles
 bbox_all <- bbox_all |>
-  sf::st_buffer(units::set_units(10, mi) |> units::set_units(m))
+  sf::st_buffer(units::set_units(20, mi) |> units::set_units(m))
 
 # return to original CRS
 bbox_all <- bbox_all |>
@@ -290,18 +290,6 @@ waterbodies_cropped <- waterbodies |>
 ### create maps ----------------------------------------------------------------
 
 # create map label locations that dodge map objects
-label_coords <- tibble::tribble(
-  ~project_abbrv, ~label_x,  ~label_y,
-  "MWT",          -121.4839, 38.25477,
-  "GSF",          -121.4023, 38.24511,
-  "LEBLS",        -121.6017, 38.62695,
-  "KOP",          -122.0955, 39.93691,
-  "LEMBP",        -121.6796, 38.21138,
-  "PROS",         -121.6548, 38.26691,
-  "TID",          -121.6329, 38.40074,
-  "DUT",          -121.6639, 38.00279
-)
-
 label_coords <- tibble::tribble(
   ~project_abbrv, ~label_x,  ~label_y,
   "MWT",          -121.4700, 38.31000,
