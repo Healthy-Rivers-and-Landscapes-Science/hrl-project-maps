@@ -329,7 +329,7 @@ ggplot() +
   ) +
   scale_color_discrete(guide = "none") +
   geom_text(
-    data = label_coords |> filter(project_abbrv != "KOP"),
+    data = label_coords |> dplyr::filter(project_abbrv != "KOP"),
     aes(
       x = label_x,
       y = label_y,
