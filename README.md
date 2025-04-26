@@ -6,6 +6,9 @@ projects that create tidal wetland, bypass floodplain, tributary floodplain, and
 tributary instream rearing habitat. Other non-flow measures include fish passage
 improvement, fish food production, and predator management.
 
+Visit the [CNRA Healthy Rivers and Landscapes website](https://resources.ca.gov/Initiatives/Voluntary-Agreements-Page)
+for more information about the program.
+
 ![Map of DWR early implementation HRL projects in the Delta and Yolo Bypass](dwr-early-imp-map/dwr_early_imp_map.png)
 *Map of DWR early implementation HRL projects in the Delta and Yolo Bypass*
 
